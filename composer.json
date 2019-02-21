@@ -1,0 +1,15 @@
+{
+  "name": "YuHsien/QwanInterviewShoppingcart",
+  "authors": [
+    {
+      "name": "Yu-Hsien Chou",
+      "email": "slps970093@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "YuHsien\\QwanInterviewShoppingcart\\" : "src//"
+    }
+  }
+}
