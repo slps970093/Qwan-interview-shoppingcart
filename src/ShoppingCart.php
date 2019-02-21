@@ -31,7 +31,7 @@ class ShoppingCart
             if ( empty($value[ self::productName]) || !is_numeric($value[ self::qty]) || !is_numeric($value[ self::price]) ) {
                 throw new ShoppingCartImportException('data formet error');
             }
-            if ( is_string($value[ self::other]) || is_array( $value[ self::other]) ){
+            if ( !empty($value[ self::other])  ){
                 $this->cart[] = array (
                     self::productName => $value[ self::productName ],
                     self::price => $value[ self::price ],
